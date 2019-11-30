@@ -59,9 +59,17 @@ Repository for terraform workshop given by Anuj Jain @ajain-ee.
 1. Checkout branch "step-4" and rebase with master. 
 2. Run **terraform destroy** and approve the destruction and start fresh.
 3. update the key value pairs with your openssh public key, this will be used to ssh into ec2 instance launch in public subnet.
+4. Run **terraform plan** 
+5. Run **terraform apply**
+6. Go to AWS Console and verify your vpc and subnets are created.
+7. Go EC2 service and verify 2 instance are running.
+8. SSH into public ec2 instance with ssh key.
+9. Commit and Merge step-4 branch into master.       
+
+# step-4 : install apache2 using ec2 instance user data
+1. Checkout branch "step-5" and rebase with master. 
+2. Check the install-apache.tpl and see it usage in ec2 instance first instance user data.
 3. Run **terraform plan** 
 4. Run **terraform apply**
-5. Go to AWS Console and verify your vpc and subnets are created.
-6. Go EC2 service and verify 2 instance are running.
-7. SSH into public ec2 instance with ssh key.
-8. Commit and Merge step-3 branch into master.       
+5. Get the public ip and terrform output and open ip in browser. You should greeting message from install apache file in browser.
+6. Commit and Merge step-5 branch into master.
