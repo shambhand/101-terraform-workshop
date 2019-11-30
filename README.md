@@ -15,7 +15,8 @@ Repository for terraform workshop given by Anuj Jain @ajain-ee.
 1. Checkout branch “step-2”. 
 2. Extract hardcode access_key into variables like this:
    
-   ```variable "aws_access_key" {
+   ```
+    variable "aws_access_key" {
       default = ""
     }
     access_key = var.aws_access_key
