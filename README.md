@@ -29,7 +29,7 @@ Repository for terraform workshop given by Anuj Jain @ajain-ee.
 6. Set subnet id from default vpc in your aws region.
 7. Run **terraform plan**
 8. Run **terraform apply**
-9  Verify ec2 instance by doing ssh into ec2-instance using command.
+9. Verify ec2 instance by doing ssh into ec2-instance using command.
    `
    ssh -i <path-to-private-key> ubuntu@public-ip-address-of-ec2-instance
    `    
