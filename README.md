@@ -54,3 +54,14 @@ Repository for terraform workshop given by Anuj Jain @ajain-ee.
 5. Run **terraform plan**
 6. Run **terraform apply**
 7. Commit and Merge step-3 branch into master.       
+
+# step-4 : Store terraform state into S3
+1. Checkout branch "step-4" and rebase with master. 
+2. Run **terraform destroy** and approve the destruction and start fresh.
+3. update the key value pairs with your openssh public key, this will be used to ssh into ec2 instance launch in public subnet.
+3. Run **terraform plan** 
+4. Run **terraform apply**
+5. Go to AWS Console and verify your vpc and subnets are created.
+6. Go EC2 service and verify 2 instance are running.
+7. SSH into public ec2 instance with ssh key.
+8. Commit and Merge step-3 branch into master.       
