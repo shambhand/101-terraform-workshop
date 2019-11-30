@@ -1,6 +1,10 @@
+variable "sshkeypath" {
+  default = ""
+}
+
 resource "aws_key_pair" "ssh_key" {
   key_name = ""
-  public_key = ""
+  public_key = file(var.sshkeypath)
 }
 
 resource "aws_instance" "first_instance" {
