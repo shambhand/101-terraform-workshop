@@ -1,19 +1,27 @@
 output "vpc_id" {
-  value = aws_vpc.workshop.id
+  value = module.myvpc.vpc_id
+}
+
+output "plublic_subnet_id" {
+  value = module.myvpc.plublic_subnet_id
+}
+
+output "private_subnet_id" {
+  value = module.myvpc.private_subnet_id
 }
 
 output "first_ec2instance_dns" {
-  value = aws_instance.first_instance.public_dns
+  value = module.myec2.first_ec2instance_dns
 }
 
 output "first_ec2instance_public_ip" {
-  value = aws_instance.first_instance.public_ip
+  value = module.myec2.first_ec2instance_public_ip
 }
 
 output "second_ec2instance_dns" {
-  value = aws_instance.second_instance.private_dns
+  value = module.myec2.second_ec2instance_dns
 }
 
 output "second_ec2instance_ip" {
-  value = aws_instance.second_instance.private_ip
+  value = module.myec2.second_ec2instance_ip
 }
